@@ -1,0 +1,54 @@
+.user{
+	.panel-body{
+		.info{
+			h3{
+				margin: 5px 0;
+			}
+		}
+		.picture{
+			text-align: center;
+			margin-top: 20px;
+		}
+	}
+
+	.details{
+
+		margin-top: 25px;
+
+		.donation-header{
+			font-weight: bold;
+			text-align: center;
+			clear: both;
+		}
+
+		.progress{
+			height: 50px;
+			.progress-bar{
+				height: 50px;
+				margin-bottom:  20px;
+			}
+		}
+		.donationLabel{
+			position: absolute;
+			width: 100%;
+			left: 0;
+			margin-top: 17px;
+			text-align: center;
+			font-weight: bold;
+		}
+
+		ul{
+			padding: 0;
+		}
+
+		.goal-header {
+			font-weight: bold;
+		}
+	}
+
+	.links {
+		.btn{
+			width: 100%;
+		}
+	}
+}

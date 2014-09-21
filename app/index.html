@@ -27,6 +27,22 @@
       <div class="label label-danger donate col-xs-12 col-md-8 col-md-offset-2">
         <h1><a href="http://www.extra-life.org/index.cfm?fuseaction=donorDrive.team&teamID=16440">Donate!</a></h1>
       </div>
+      <div class="navigation-btns col-xs-12 col-md-8 col-md-offset-2">
+        <div class="btn col-md-6 col-xs-12">
+            <a class="btn btn-success" href="/extralife/#/">
+                <h3>
+                    Home!
+                </h3>
+            </a>
+        </div>
+        <div class="btn col-md-6 col-xs-12">
+            <a class="btn btn-success" href="/extralife/#/teem">
+                <h3>
+                    Teem Bios!
+                </h3>
+            </a>
+        </div>
+      </div>
 
       <div ng-view=""></div>
 
@@ -80,7 +96,8 @@
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/controllers/teem.js"></script>
+        <script src="scripts/controllers/user.js"></script>
         <!-- endbuild -->
 </body>
 </html>
