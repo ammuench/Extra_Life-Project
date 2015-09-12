@@ -10,28 +10,35 @@
 
 angular.module('extraLifeApp')
   .controller('UserCtrl', function ($scope, $http, $routeParams) {
-	var userList;
 
 	$scope.userObj = {};
 
 	var userNumber = parseInt($routeParams.userID);
+  var userURL = 'http://localhost:8081/userinfo/' + userNumber;
+  var goalURL = 'http://localhost:8081/usergoal/' + userNumber;
 
-  	$http({method: 'GET', url: 'http://199.167.192.149:3000/users'}).
+  	$http({method: 'GET', url: userURL }).
   	  success(function(data) {
   	    console.log(data);
-  	    userList = data;
-  	    for(var i=0, len=userList.length; i<len; i++){
-  	    	if(userList[i].userId === userNumber){
-  	    		$scope.userObj = userList[i];
-  	    		return;
-  	    	}
-  	    }
+  	    $scope.userObj.info = data;
   	  }).
   	  error(function(data, status, headers, config) {
   	    // called asynchronously if an error occurs
   	    // or server returns response with an error status.
   	    console.log(data, status, headers, config);
   	  });
+
+    $http({method: 'GET', url: goalURL }).
+      success(function(data) {
+        console.log(data);
+        $scope.userObj.goals = data;
+      }).
+      error(function(data, status, headers, config) {
+        // called asynchronously if an error occurs
+        // or server returns response with an error status.
+        console.log(data, status, headers, config);
+      });
+
 
   	
 
