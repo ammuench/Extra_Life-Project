@@ -8,8 +8,8 @@
 			</div>
 			<div class="progress-container">
 				<div class="progress">
-				  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="2500" style="width: 2%;">
-				    <p>$50/$2500</p>
+				  <div class="progress-bar progress-bar-warning" role="progressbar" data-aria-valuenow={{goalAmount}} aria-valuemin="0" data-aria-valuemax={{goalWhole}} style="{{donationPercentage(goalAmount, goalWhole)}}">
+				    <p>${{goalAmount}}/${{goalWhole}}</p>
 				  </div>
 				</div>
 			</div>

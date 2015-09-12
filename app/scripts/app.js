@@ -27,7 +27,7 @@ angular
         templateUrl: 'views/teem.html',
         controller: 'TeemCtrl'
       })
-      .when('/user', {
+      .when('/user/:userID', {
         templateUrl: 'views/user.html',
         controller: 'UserCtrl'
       })
