@@ -10,7 +10,7 @@
 angular.module('extraLifeApp')
   .controller('MainCtrl', function ($scope, $http) {
     
-    $http({method: 'GET', url: 'http://el-apl.alexmuench.net:8081/teamgoal/20784'}).
+    $http({method: 'GET', url: 'http://el-apl.alexmuench.net:8081/teamgoal/23224'}).
   	  success(function(data) {
   	  	$scope.goalAmount = data.raised;
   	  	$scope.goalWhole = data.goal;
