@@ -3,20 +3,57 @@
 		margin: 10px auto;
 	}
 
-	.panel.donations{
-		border:none;
+	.stream-panel{
+		iframe{
+			width: 100%;
+			@media(min-width: 992px){
+				height: 562px;
+			}
+			@media(max-width: 991px){
+				height: 400px;
+			}
+			@media(max-width: 480px){
+				height: 200px;
+			}
+		}
 
-		.panel-heading.donations{ 
-			background-color: #f0ad4e;
+		.panel-heading{
+			text-align: center;
+		
+			p{
+				margin-bottom: 0;
+			}
+
+			.not-live{
+				color: #AF0001;
+			}
+
+			.live{
+				color: #03AF00;
+			}
+		}
+	}
+
+	.donations{
+		border:none;
+		background-color: #d9534f;
+		margin-bottom: 20px;
+		padding: 0 20px;
+		text-align: center;
+
+		.donations-label{ 
 			color: white;
+		}
+
+		h2{
+			margin: 10px 0;
 		}
 	}
 
 	.progress-container{
-		padding: 20px;
+
 	
 		.progress{
-			margin: 20px 0;
 			height:32px;
 
 			p{

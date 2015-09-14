@@ -10,10 +10,10 @@
 angular.module('extraLifeApp')
   .controller('MainCtrl', function ($scope, $http) {
     
-    $http({method: 'GET', url: 'http://199.167.192.149:3000/users/teem'}).
+    $http({method: 'GET', url: 'http://el-apl.alexmuench.net:8081/teamgoal/20784'}).
   	  success(function(data) {
-  	  	$scope.goalAmount = parseInt(data[0].total);
-  	  	$scope.goalWhole = parseInt(data[0].goal);
+  	  	$scope.goalAmount = data.raised;
+  	  	$scope.goalWhole = data.goal;
   	  }).
   	  error(function(data, status, headers, config) {
   	    // called asynchronously if an error occurs

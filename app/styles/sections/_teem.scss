@@ -1,4 +1,14 @@
 .teem{
+	.member-card{
+		@media(min-width: 768px){
+			min-height: 387px;
+
+			.thumbnail{
+				min-height: 367px;
+			}
+		}
+	}
+
 	.thumbnail{
 
 		text-align: center;
@@ -7,6 +17,15 @@
 			padding-top: 25px;
 			width: 150px;
 			height: 175px;
+		}
+		
+		.caption{
+			h3{
+				margin-top: 10px;
+			}
+		}
+		.details-button{
+			margin-bottom: 8px;
 		}
 	}
 }

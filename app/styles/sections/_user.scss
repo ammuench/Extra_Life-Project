@@ -1,54 +1,92 @@
-.user{
-	.panel-body{
-		.info{
-			h3{
-				margin: 5px 0;
-			}
-		}
-		.picture{
+.user {
+
+	h2.name{
+		@media(max-width: 991px){
 			text-align: center;
-			margin-top: 20px;
 		}
 	}
 
-	.details{
+    .panel-body {
+        .info {
+            h3 {
+                margin: 5px 0;
+            }
+        }
+        .picture {
+            text-align: center;
+            margin-top: 20px;
+        }
+    }
+    .details {
+        margin-top: 25px;
+        .donation-header {
+            font-weight: bold;
+            text-align: left;
+            clear: both;
 
-		margin-top: 25px;
+            @media(max-width: 991px){
+            	text-align: center;
+            }
+        }
+        .progress {
+            height: 50px;
+            .progress-bar {
+                height: 50px;
+                margin-bottom: 20px;
+            }
+        }
+        .donationLabel {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            margin-top: 17px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .donations-list {
+            ul {
+                list-style: none;
+                li {
+                    text-align: center;
+                    &:not(:first-child) {
+                        margin-top: 10px;
+                    }
+                }
+            }
+            .nodonations {
+                text-align: center;
+            }
+            .spacer {
+                // @media(min-width: 768px){
+                // 	display: none;
+                // }
+                // @media(max-width: 767px){
+                width: 200px;
+                height: 1px;
+                border-bottom: solid 1px #ddd;
+                margin: auto;
+                // }
+           
+            }
+        }
+        ul {
+            padding: 0;
+        }
+        .goal-header {
+            font-weight: bold;
+        }
+    }
+    .links {
+        .btn {
+            width: 100%;
 
-		.donation-header{
-			font-weight: bold;
-			text-align: center;
-			clear: both;
-		}
-
-		.progress{
-			height: 50px;
-			.progress-bar{
-				height: 50px;
-				margin-bottom:  20px;
-			}
-		}
-		.donationLabel{
-			position: absolute;
-			width: 100%;
-			left: 0;
-			margin-top: 17px;
-			text-align: center;
-			font-weight: bold;
-		}
-
-		ul{
-			padding: 0;
-		}
-
-		.goal-header {
-			font-weight: bold;
-		}
-	}
-
-	.links {
-		.btn{
-			width: 100%;
-		}
-	}
+            a{
+            	word-break: break-word;
+            	white-space: normal;
+            }
+        }
+        .profile-link {
+            margin-bottom: 10px;
+        }
+    }
 }

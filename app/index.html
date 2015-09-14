@@ -20,28 +20,29 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="container">
+    <div class="container-box">
       <div class="header col-xs-12">
-        <img src="./images/logo.png" alt="Dreem Teem">
-      </div>
-      <div class="label label-danger donate col-xs-12 col-md-8 col-md-offset-2">
-        <h1><a href="http://www.extra-life.org/index.cfm?fuseaction=donorDrive.team&teamID=16440">Donate!</a></h1>
-      </div>
-      <div class="navigation-btns col-xs-12 col-md-8 col-md-offset-2">
-        <div class="btn col-md-6 col-xs-12">
-            <a class="btn btn-success" href="./#/">
-                <h3>
-                    Home!
-                </h3>
-            </a>
+        <div class="col-xs-12 col-sm-8 col-md-7 header-image">
+          <a href="./#/">
+            <img src="./images/logo.png" alt="Dreem Teem">
+          </a>
         </div>
-        <div class="btn col-md-6 col-xs-12">
-            <a class="btn btn-success" href="./#/teem">
-                <h3>
-                    Teem Bios!
-                </h3>
-            </a>
+
+        <div class="col-xs-12 col-sm-4 col-md-5 button-block">
+          <div class="label label-danger donate col-xs-12">
+            <h1><a href="http://www.extra-life.org/index.cfm?fuseaction=donorDrive.teamParticipants&teamID=23224">Donate!</a></h1>
+          </div>
+          <div class="navigation-btns teem-button col-xs-12">
+            <div class="btn col-xs-12">
+                <a class="btn btn-success" href="./#/teem">
+                    <h3>
+                        Meet our Teem
+                    </h3>
+                </a>
+            </div>
+          </div>
         </div>
+        
       </div>
 
       <div ng-view=""></div>
